@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
   users;
-  pager: Pager = {"page" : 1, "size" : 3};
+  pager: Pager = {"page" : 0, "size" : 3};
   totalPages: number;
   totalPagesRange: number[] = [];
   constructor(private userService: UserService) { }

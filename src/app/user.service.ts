@@ -9,11 +9,11 @@ export class UserService {
 
   getAll(pager: Pager){
     let Params = new HttpParams();
-    Params = Params.append('page', String(pager.page));
-    
-
-    return this.http.get(this.url, { params: Params } );
+    Params = Params.append('page', String(pager.page+1));
+      return this.http.get(this.url, { params: Params } );
   }
-
+  getUser(id: number){
+    return this.http.get(this.url+"/"+id);
+   }
 
 }

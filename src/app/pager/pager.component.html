@@ -2,7 +2,7 @@
   <li class="page-item">
     <a class="page-link" (click)="previousPage()">Previous</a>
   </li>
-  <ng-container *ngFor="let p of totalPagesRange.slice(1); let i = index">
+  <ng-container *ngFor="let p of totalPagesRange; let i = index">
     <li class=" page-item active" [class.active]="currentPage(i)">
       <a class="page-link " (click)="goToPage(i) ">{{i+1}}</a>
     </li>

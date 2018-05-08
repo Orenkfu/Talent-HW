@@ -33,8 +33,6 @@ export class PagerComponent  {
   }
 
   goToPage(page: number) {
-    console.log(this.pager.page);
-    console.log(page);
     if (this.validatePage(page)) {
       this.pager.page = page;
       this.click.emit(null);
