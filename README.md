@@ -7,7 +7,7 @@ Homework for JS async programming. Angular version.
 clone the repo, open angular folder with vs code, and run the npm command "npm install" to install dependencies.
 then deploy webpack with "ng serve".
 
-### Features
+## Features
 ```
 Angular project is a bit different from HW requirements, though it is connected to the API specified.
 
