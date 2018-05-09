@@ -19,7 +19,7 @@ export class PagerComponent  {
   @Output() click = new EventEmitter();
   paginationError: string;
 
-  constructor(private service: UserService, private storage: StorageService) {
+  constructor(private service: UserService) {
 
    }
 
@@ -53,14 +53,7 @@ export class PagerComponent  {
     }
   }
 
-  @HostListener('window:beforeunload', ['$event'])
-  beforeUnloadHandler(event) {
-    this.storage.setPager(this.pager);
-  }
-
-  ngOnDestroy(): void {
-    this.storage.setPager(this.pager);
-  }
+  
 
 
   previousPage() {
