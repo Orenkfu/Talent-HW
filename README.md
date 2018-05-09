@@ -11,13 +11,12 @@ then deploy webpack with "ng serve".
 ```
 Angular project is a bit different from HW requirements, though it is connected to the API specified.
 
-```
 Using Bootstrap and ng router module, I've implemented a navbar to navigate between different components.
-```
+
 In the users tab, you can browse a table containing data obtained from API.
-```
+
 A reusable pagination component is implemented, which you can use to view the different pages of "users" provided by API.
-```
+
 Clicking on a user's name in the users table will navigate to a new component,
 in which you can currently view his "avatar"(image).
 ```
